@@ -15,7 +15,7 @@ canvas.addEventListener('touchstart', start, { passive: false });
 
 canvas.addEventListener('mouseup' , stop);
 canvas.addEventListener('touchend', stop);
-
+canvas.addEventListener('mouseout', stop);
 
 
 canvas.addEventListener('mousemove', draw);
