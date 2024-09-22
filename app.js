@@ -32,11 +32,12 @@ function stop(){
 }
 
 function draw(e){
+  console.log(e);
   if (!writingmode) return;
 const rect = canvas.getBoundingClientRect();
 const x = (e.clientX || e.touches[0].clientX) - rect.left;
 const y = (e.clientY || e.touches[0].clientY) - rect.top;
-cxt.lineWidth = 1;
+cxt.lineWidth = 5;
 cxt.lineCap = 'round';
 cxt.lineTo(x, y);
 cxt.stroke();
@@ -49,6 +50,7 @@ function clear() {
   }
   
 function saveCanvas() {
+  
     const dataURL = canvas.toDataURL('image/jpg');
     const link = document.createElement('a');
     link.href = dataURL;

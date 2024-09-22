@@ -38,3 +38,10 @@ button{
     font-style: normal;
     cursor: pointer;
 }
+
+
+@media(max-width:700px){
+    canvas{
+        height: 900px;
+    }
+}
