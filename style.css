@@ -1,0 +1,42 @@
+body{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center; 
+   height: 100vh;
+   overflow: hidden;
+}
+
+h1{
+    font-family: "Montserrat", system-ui;
+  font-size: 40px;
+  font-weight:800px;
+  text-transform: uppercase;
+}
+
+canvas{
+    border:20px;
+    border: solid black;
+    border-radius: 10px;
+    background-color: aqua;
+
+}
+
+.but{
+    margin-top: 60px;
+}
+
+button{
+    border: 2px;
+    border-radius: 15px;
+    border: solid rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 110px;
+    height: 50px;
+    margin: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    cursor: pointer;
+}
