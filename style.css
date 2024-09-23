@@ -1,70 +1,74 @@
-body{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center; 
-   height: 100vh;
-   overflow: hidden;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  padding: 0;
 }
 
-h1{
-    font-family: "Montserrat", system-ui;
+h1 {
+  font-family: "Montserrat", system-ui;
   font-size: 40px;
-  font-weight:800px;
+  font-weight: 800px;
   text-transform: uppercase;
 }
 
-canvas{
-    border:20px;
-    border: solid black;
-    border-radius: 10px;
+canvas {
+  border: 20px;
+  border: solid black;
+  border-radius: 10px;
+  height:500px;
+  width:900px;
 }
 
-.but{
-    margin-top: 60px;
+.but {
+  margin-top: 1rem;
 }
 
-button{
-    border: 2px;
-    border-radius: 15px;
-    border: solid rgb(0, 0, 0);
-    background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    width: 110px;
-    height: 50px;
-    margin: 15px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    cursor: pointer;
+button {
+  border: 2px;
+  border-radius: 15px;
+  border: solid rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  width: 110px;
+  height: 50px;
+  margin: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  cursor: pointer;
 }
 
-#stroke{
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    border: 2px solid black;
-    border-radius: 4px;
-    width: max-content;
-    height: 25px;
-    margin-bottom: 10px;
+#stroke {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 2px solid black;
+  border-radius: 4px;
+  width: max-content;
+  height: 25px;
+  margin-bottom: 10px;
 }
 
-@media (max-width: 600px) {
-    h1 {
-        font-size: 30px; 
-    }
+@media (max-width: 700px) {
+  h1 {
+    font-size: 30px;
+  }
 
-    canvas {
-        height: 500px;
-        width: 100vw; 
-    }
+  canvas {
+    height: 600px;
+    width: 400px ;
+  }
 
-    button {
-        width: 90px;
-        height: 40px; 
-    }
+  button {
+    width: 90px;
+    height: 40px;
+  }
 
-    .but {
-        margin-top: 40px; 
-    }
+  .but {
+    margin-top: 40px;
+  }
 }
