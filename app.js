@@ -3,6 +3,8 @@ const clearbtn = document.getElementById('clear');
 const save = document.getElementById('save');
 const cxt = canvas.getContext('2d');
 let writingmode = false ; 
+const selectElement = document.getElementById('stroke');
+const selectedValue = selectElement.value;
 
 clearbtn.addEventListener('click',clear);
 save.addEventListener('click',saveCanvas);
@@ -33,11 +35,13 @@ function stop(){
 
 function draw(e){
   console.log(e);
+  const selectElement = document.getElementById('stroke');
+const selectedValue = selectElement.value;  
   if (!writingmode) return;
 const rect = canvas.getBoundingClientRect();
 const x = (e.clientX || e.touches[0].clientX) - rect.left;
 const y = (e.clientY || e.touches[0].clientY) - rect.top;
-cxt.lineWidth = 5;
+cxt.lineWidth = selectedValue;
 cxt.lineCap = 'round';
 cxt.lineTo(x, y);
 cxt.stroke();
