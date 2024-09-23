@@ -25,7 +25,7 @@ canvas {
 }
 
 .but {
-  margin-top: 1rem;
+  margin-top: .5rem;
 }
 
 button {
@@ -69,6 +69,6 @@ button {
   }
 
   .but {
-    margin-top: 40px;
+    margin-top: .5rem;
   }
 }
